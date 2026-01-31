@@ -2,7 +2,7 @@
 import { SubmissionInputs } from "@/lib/definitions";
 import SubmissionForm from "./SubmissionForm";
 import dynamic from 'next/dynamic'
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const MapLoader = dynamic(() => import('./SubmissionMap'), {
         loading: () => <p>Loading...</p>,

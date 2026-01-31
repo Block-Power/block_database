@@ -27,7 +27,7 @@ export default function Page(){
                     </summary>
                     <p className="faq_answer">
                         Sorry about that! Please submit updates on the <Link href="./contact">contact form</Link>, 
-                        and we'll update it as soon as possible.
+                        and we&apos;ll update it as soon as possible.
                     </p>
 
                 </details>
@@ -36,7 +36,7 @@ export default function Page(){
                         What is Block Mapper?
                     </summary>
                     <p className="faq_answer">
-                        Block Mapper is part of the Crown Heights Care Collective's Block Power project. 
+                        Block Mapper is part of the Crown Heights Care Collective&apos;s Block Power project. 
                         Our goal is to build hyperlocal community institutions that empower us to take care 
                         of each other, without perpetuating systems of carceral violence. In order to do this, 
                         we built Block Mapper to help connect people to block associations and those block 

@@ -22,10 +22,10 @@ export default function ContactForm() {
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <form onSubmit={handleSubmit(onSubmit)}>
       {/* register your input into the hook by invoking the "register" function */}
-        <label>What's Your Name?* </label>
+        <label>What&apos;s Your Name?* </label>
         <input defaultValue="" {...register("name", { required: true })} />
         {errors.name && <span className="form_error">This field is required</span>}
-        <label>What's Your Email?* </label>
+        <label>What&apos;s Your Email?* </label>
         <input defaultValue="" {...register("email", { required: true })} />
         {errors.email && <span className="form_error">This field is required</span>}
         <label>Block Association Name:* </label>
