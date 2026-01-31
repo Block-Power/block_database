@@ -1,11 +1,8 @@
 "use client";
-import { submissionApproval } from "@/lib/db";
 import { ApprovedSubmission, SubmissionInputs } from "@/lib/definitions";
 import { useRouter } from "next/navigation";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { usePolygon } from "./SubmissionPage";
-
-export let polylayer = [];
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -45,7 +42,6 @@ export default function SubmissionForm({
   } = useForm<ApprovedSubmission>();
   const onSubmit: SubmitHandler<ApprovedSubmission> = async (data) => {
     data.coords = polygonCoords;
-    const submissionResponse = await submissionApproval(data, submission.id);
     router.push("../submissions");
   };
 

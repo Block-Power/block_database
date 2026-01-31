@@ -4,10 +4,6 @@ import { SubmissionInputs } from "@/lib/definitions"
 import { useRouter } from "next/navigation"
 import { useForm, SubmitHandler } from "react-hook-form"
 
-
-
-
-
 export default function ContactForm() {
   const router = useRouter()
   
@@ -21,7 +17,6 @@ export default function ContactForm() {
     console.log(submissionResponse)
     router.push("./contact/confirm")
   }
-
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
