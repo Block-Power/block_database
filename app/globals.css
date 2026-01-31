@@ -224,6 +224,10 @@ a {
       padding: 5px;
      
     }
+    .input_error {
+      border-color: red;
+      background-color: #ffecec;
+    }
     input::placeholder, textarea::placeholder {
         color: rgb(117, 116, 116);
       }
