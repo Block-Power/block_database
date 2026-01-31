@@ -8,7 +8,6 @@ import { EditControl } from "react-leaflet-draw"
 import { usePolygon } from "./SubmissionPage"
 import { LatLng } from "leaflet"
 
-// @ts-ignore
 function handleDraw(e: any) {
     console.log(e)
 }
@@ -16,7 +15,6 @@ function handleDraw(e: any) {
 const DrawComponent = () => {
     const { setPolygonCoords } = usePolygon(); // Get the setter from context
 
-    // @ts-ignore
     const _onCreated = (e: any) => {
 
         const { layerType, layer } = e;
