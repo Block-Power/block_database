@@ -10,7 +10,7 @@ const compat = new FlatCompat({
   "rules": {
         "@typescript-eslint/no-explicit-any": "off",
         "no-unused-vars": "off",
-        "no-explicit-any": off
+        "no-explicit-any": "off"
       }
 });
 
