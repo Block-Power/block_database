@@ -2,8 +2,7 @@
 import { SubmissionInputs } from "@/lib/definitions";
 import SubmissionForm from "./SubmissionForm";
 import dynamic from 'next/dynamic'
-import { LatLng } from "leaflet";
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const MapLoader = dynamic(() => import('./SubmissionMap'), {
         loading: () => <p>Loading...</p>,
@@ -20,10 +19,6 @@ interface PolygonContextType {
 
 // Create a Context with a default null value, which will be provided by the Provider
 const PolygonContext = createContext<PolygonContextType | null>(null);
-
-interface PolygonProviderProps {
-  children: ReactNode;
-}
 
 // Custom hook to use the PolygonContext
 export const usePolygon = () => {
