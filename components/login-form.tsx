@@ -40,7 +40,7 @@ export function LoginForm({
       });
       if (error) throw error;
       // Redirect to the originally requested page, or default to /protected
-      const redirectTo = searchParams.get("redirectTo") || "/protected";
+      const redirectTo = searchParams.get("redirectTo") || "/admin";
       router.push(redirectTo);
     } catch (error: unknown) {
       setError(error instanceof Error ? error.message : "An error occurred");
