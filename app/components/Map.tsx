@@ -28,6 +28,7 @@ function blockPopUp(block: Block) {
                 
             </div> 
             <span>Last updated: {updateDate}</span>           
+            <span>Something look off? <Link target="_blank" href="mailto:blockmappercontact@gmail.com">Contact us.</Link></span>           
         </section>
     )
 }
