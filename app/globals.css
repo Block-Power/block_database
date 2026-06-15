@@ -255,17 +255,38 @@ a {
   margin: 20px;
 
 }
-
+.submissions_list {
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 .submission_container {
-  border: 1px solid grey;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
   margin: 5px;
-  background-color: aliceblue;
+}
 
+.submission_button {
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: aliceblue;
+  position: relative;;
+}
+.submission_button:hover {
+  background-color: rgb(116, 184, 244)
+}
+.submission_main_button {
+  padding: 10px 20px;
+  flex-grow: 2;
   
 }
-.submission_container:hover {
-    background-color: rgb(116, 184, 244)
+.submission_hide_button {
+  padding: 3px 7px 4px;
+  color: red;
+  border-left: none;
+
 }
 .submission_map_main {
   width: 100%;

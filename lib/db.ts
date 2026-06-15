@@ -60,9 +60,10 @@ export async function submissionApproval(formData : ApprovedSubmission, submissi
 }
 
 export async function hideSubmission(submissionId: number) {
-  const supabase = createAuthClient()
+  const supabase = createClient()
   const response = await supabase.from('submissions').update({"show": false}).eq("id", submissionId).select()
-      return response
+  return response
+    
 }
 
 export async function getSubmissions() {

@@ -8,6 +8,9 @@ export interface Block {
     coords: Array<L.LatLngExpression>,
     updated_at: number
 }
+export interface Submissions{
+  submissions: Array<SubmissionInputs>
+}
 export interface SubmissionInputs {
   id: number,
   name: string,
